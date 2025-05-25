@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Placeholder Image</title>
+</head>
+<body>
+    <h1>Creating a Simple Placeholder Image</h1>
+    <p>Since your server doesn't have the GD library installed, let's create a simple placeholder image manually:</p>
+    
+    <ol>
+        <li>Download one of these placeholder images:
+            <ul>
+                <li><a href="https://via.placeholder.com/400x400.png?text=No+Image" download="product-placeholder.jpg">Placeholder 400x400</a></li>
+                <li><a href="https://via.placeholder.com/800x800.png?text=Product+Image" download="product-placeholder-large.jpg">Placeholder 800x800</a></li>
+            </ul>
+        </li>
+        <li>Save the downloaded image as "product-placeholder.jpg" in your assets/images folder</li>
+        <li>Refresh your products page to see the placeholder for missing images</li>
+    </ol>
+    
+    <p>Alternatively, you can enable the GD library in your PHP installation:</p>
+    <ol>
+        <li>Open your php.ini file (usually in C:\xampp\php\php.ini)</li>
+        <li>Find the line with ";extension=gd" and remove the semicolon to make it "extension=gd"</li>
+        <li>Save the file and restart your Apache server</li>
+        <li>Then try running the create-placeholder.php script again</li>
+    </ol>
+</body>
+</html>
